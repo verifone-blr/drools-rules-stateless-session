@@ -15,10 +15,6 @@ public class Passport {
 
    private int age;
 
-   private Validation validation = Validation.UNKNOWN;
-
-   private String cause = "";
-
    private Passport() {
    }
 
@@ -46,28 +42,12 @@ public class Passport {
       return unusedVisaPages;
    }
 
-   public Validation getValidation() {
-      return validation;
-   }
-
-   public void setValidation(Validation validation) {
-      this.validation = validation;
-   }
-
    public int getAge() {
       return age;
    }
 
    public void setAge(int age) {
       this.age = age;
-   }
-
-   public String getCause() {
-      return cause;
-   }
-
-   public void setCause(String cause) {
-      this.cause = cause;
    }
 
    @Override
