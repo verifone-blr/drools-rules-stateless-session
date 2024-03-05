@@ -15,6 +15,8 @@ public class Passport {
 
    private int age;
 
+   private Validation validation = Validation.UNKNOWN;
+
    private Passport() {
    }
 
@@ -48,6 +50,14 @@ public class Passport {
 
    public void setAge(int age) {
       this.age = age;
+   }
+
+   public Validation getValidation() {
+      return validation;
+   }
+
+   public void setValidation(Validation validation) {
+      this.validation = validation;
    }
 
    @Override

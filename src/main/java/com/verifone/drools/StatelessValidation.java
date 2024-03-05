@@ -18,6 +18,11 @@ public class StatelessValidation {
       KieContainer kieClasspathContainer = KieServices.Factory.get().getKieClasspathContainer();
       StatelessKieSession newStatelessKieSession = kieClasspathContainer.newStatelessKieSession("StatelessValidation");
       newStatelessKieSession.execute(passports);
+      
+      System.out.println("==================================================");
+      
+      passports.stream().forEach(eachPassport-> System.out.println(eachPassport + " validation " + eachPassport.getValidation()));
+      
    }
 
 }
